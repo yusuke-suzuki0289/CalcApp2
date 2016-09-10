@@ -15,33 +15,53 @@
         android:text="四則演算アプリ"
         android:id="@+id/textView1"
         android:textColor="@color/colorPrimary"
+        android:textSize="30dp" />
 
-    <Button1
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText"
+        android:layout_below="@+id/textView1"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText2"
+        android:layout_below="@+id/editText"/>
+
+    <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="+"
         android:id="@+id/button"
-        android:layout_below="@+id/textView1"/>
+        android:layout_below="@+id/editText2"
+        android:textSize="30dp" />
 
-    <Button2
+    <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="-"
         android:id="@+id/button2"
-        android:layout_toRightOf="@+id/button"/>
+        android:layout_below="@+id/editText2"
+        android:layout_toRightOf="@+id/button"
+        android:textSize="30dp" />
 
-    <Button3
+    <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="*"
         android:id="@+id/button3"
-        android:layout_toRightOf="@+id/button2"/>
+        android:layout_below="@+id/editText2"
+        android:layout_toRightOf="@+id/button2"
+        android:textSize="30dp" />
 
-    <Button4
+    <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="*"
+        android:text="/"
         android:id="@+id/button4"
-        android:layout_toRightOf="@+id/button3"/>
+        android:layout_below="@+id/editText2"
+        android:layout_toRightOf="@+id/button3"
+        android:textSize="30dp" />
 
 </RelativeLayout>
