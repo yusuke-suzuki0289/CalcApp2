@@ -13,8 +13,8 @@ public class SecondActivity extends AppCompatActivity {
         setContentView(R.layout.activity_second);
 
         Intent intent = getIntent();
-        float value1 = intent.getFloatExtra("VALUE1",0); //課題指摘事項を受け再修正 小数点入力に対応
-        float value2 = intent.getFloatExtra("VALUE2",0); //課題指摘事項を受け再修正 小数点入力に対応
+        double value1 = intent.getDoubleExtra("VALUE1",0); //課題指摘事項を受け再修正 小数点入力に対応
+        double value2 = intent.getDoubleExtra("VALUE2",0); //課題指摘事項を受け再修正 小数点入力に対応
         String operator = intent.getStringExtra("OPERATOR");
 
         if (operator.equals("+")) {
