@@ -3,9 +3,11 @@ package jp.techacademy.yusuke2.suzuki.calcapp;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.text.InputType;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.text.TextWatcher; //課題指摘を受け修正
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
@@ -37,6 +39,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         // EditTextの宣言
         EditText edittext = (EditText) findViewById(R.id.editText);
         EditText edittext2 = (EditText) findViewById(R.id.editText2);
+
 
         //EditTextの値の取得と浮動小数点型への変換
         String str1 = edittext.getText().toString();
