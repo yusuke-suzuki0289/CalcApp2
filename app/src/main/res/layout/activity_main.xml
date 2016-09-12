@@ -15,21 +15,21 @@
         android:text="四則演算アプリ"
         android:id="@+id/textView1"
         android:textColor="@color/colorPrimary"
-        android:textSize="30dp" /> <!--課題指摘事項を受け修正-->
+        android:textSize="30dp" />
 
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/editText"
         android:layout_below="@+id/textView1"
-        android:inputType="number"/> <!--課題指摘事項を受け修正-->
+        android:inputType="numberDecimal"/> <!--課題指摘事項を受け修正--><!--課題指摘事項を受け再修正 小数点入力に対応-->
 
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/editText2"
         android:layout_below="@+id/editText"
-        android:inputType="number"/>
+        android:inputType="numberDecimal"/> <!--課題指摘事項を受け修正--><!--課題指摘事項を受け再修正 小数点入力に対応-->
 
     <Button
         android:layout_width="wrap_content"
@@ -38,7 +38,6 @@
         android:id="@+id/button"
         android:layout_below="@+id/editText2"
         android:textSize="30dp" />
-
 
     <Button
         android:layout_width="wrap_content"

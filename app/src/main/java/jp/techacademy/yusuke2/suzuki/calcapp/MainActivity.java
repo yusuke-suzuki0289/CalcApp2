@@ -43,11 +43,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         //EditTextの値の取得と浮動小数点型への変換
         String str1 = edittext.getText().toString();
-        double d1 = Integer.parseInt(str1);
+        float d1 = Integer.parseInt(str1); //課題指摘事項を受け再修正 小数点入力に対応
         intent.putExtra("VALUE1", d1);
 
         String str2 = edittext2.getText().toString();
-        double d2 = Integer.parseInt(str2);
+        float d2 = Integer.parseInt(str2); //課題指摘事項を受け再修正 小数点入力に対応
         intent.putExtra("VALUE2", d2);
 
         //Buttonの値の取得
